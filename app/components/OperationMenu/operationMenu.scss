@@ -1,0 +1,32 @@
+
+.search_field {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 80%;
+    height:50%;
+
+    .button {
+        color: white;
+        cursor: pointer;
+        transition: font-size 0.3s ease-in-out;
+        padding: 0 1.0rem;
+    }
+    .button:active, 
+    .button:hover{
+        font-size:20px;
+        color: orange;
+    }
+
+    .search_input{
+        color:black;
+        background-color: rgba(255, 255, 255, 0.74);
+        border-radius: 10%;
+        transition: background-color 0.2s ease-in-out;
+
+    }
+    .search_input:active, 
+    .search_input:hover{
+        background-color: white;
+    }
+}
+

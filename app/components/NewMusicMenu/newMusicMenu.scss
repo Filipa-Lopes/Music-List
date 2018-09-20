@@ -1,0 +1,47 @@
+
+.new_music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    color: white;
+    justify-content: center;
+    margin-top: 3%; 
+    
+}
+.inputField{
+    color: black;
+    justify-content: space-between;
+    width:80%;
+    background-image: linear-gradient(rgba(243, 221, 21, 0.63), rgba(255, 166, 0, 0.63));
+    text-align: center;
+    transition: background-image 0.5s;
+    margin-bottom: 3%; 
+
+}
+
+.inputField:active,
+.inputField:hover{
+    background-image: linear-gradient(rgb(255, 230, 0),rgb(255, 166, 0));
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0% 30%;
+    padding: 8px;
+    border-radius: 20px;
+    background-image: radial-gradient(rgb(151, 55, 160), rgba(238, 13, 118, 0.623));
+}
+
+.add_button{
+    color: rgba(255, 255, 255, 0.685);
+    font-weight: bold;
+    transition: color 0.5s;
+    margin-top: 3%;
+}
+
+.add_button:hover{
+    color: rgb(255, 255, 255);
+}

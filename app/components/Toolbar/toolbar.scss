@@ -1,0 +1,94 @@
+
+.toolbar{
+    position:absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background: rgb(133, 15, 133);
+    height: 56px;
+
+}
+
+.toolbar_navigation{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.toolbar_logo a{
+    color:white;
+    text-decoration: none;
+    font-size:1.5rem;
+}
+
+.toolbar_logo {
+    margin-left: 1.5rem;
+}
+
+
+.drawerToggleButton{
+    display:flex;
+    flex-direction: column;
+    height: 30px;
+    width:30px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.drawerToggleButton:focus{
+    outline: none;
+}
+
+.sideDrawer{
+    height:100%;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 200px;
+    z-index:200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sideDrawer.open{
+    transform: translateX(0);
+}
+
+
+.sideDrawer ul{
+    height:100%;
+    list-style : none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sideDrawer a{
+    text-decoration: none;
+    color: rgb(82, 15, 82);
+    flex-direction: column;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.sideDrawer li{
+    margin: .5rem 0;
+}
+
+.sideDrawer a:active,
+.sideDrawer a:hover{
+    color: orange;
+}
+
+.backdrop{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    z-index:100;
+}
